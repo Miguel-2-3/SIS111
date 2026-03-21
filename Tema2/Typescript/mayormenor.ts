@@ -23,3 +23,5 @@ const b = await rl.question("Introduzca el valor de b: ")
 const c = await rl.question("Introduzca el valor de c: ")
 
 console.log(mayormenor(Number(a), Number(b), Number(c)))
+
+rl.close();
