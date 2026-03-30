@@ -1,20 +1,19 @@
 def mayormenor(a,b,c):
+    mayor=a
+    menor=a
     if(a>b and a>c):
-        if(b>c):
-            return f"Mayor: a: {a}  Menor: c: {c}"
-        else:
-            return f"Mayor: a: {a}  Menor: b: {b}"
+        mayor=a
     elif(b>a and b>c):
-        if(a>c):
-            return f"Mayor: b: {b}  Menor: c: {c}"
-        else:
-            return f"Mayor: b: {b}  Menor: a: {a}"
+        mayor=b
     else:
-        if(a>b):
-            return f"Mayor: c: {c}  Menor: b: {b}"
-        else:
-            return f"Mayor: c: {c}  Menor: a: {a}"
-
+        mayor=c
+    if(a<b and b<c):
+        menor=a
+    elif(b<a and b<c):
+        menor=b
+    else:
+        menor=c
+    return f"Menor: {menor} Mayor {mayor}"
 
 print("**********Mayor Menor**********")
 print("Introduzca el valor de a: ")
